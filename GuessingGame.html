@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title> 
+  
+    <style> 
+        html { 
+    font-family: Arial; 
+    } 
+      
+    </style> 
+</head> 
+  
+<body> 
+<h1>Guessing Game</h1> 
+  
+<p>I have chosen a number between 1 and 10. Try to guess it.</p> 
+  
+<div class="form"> 
+    <label for="guessField">Your guess: </label> 
+    <input type = "text" id = "guessField" class = "guessField"> 
+    <input type = "submit" value = "Submit guess" 
+           class = "guessSubmit" id = "submitguess"> 
+</div> 
+  
+<script type = "text/javascript"> 
+  
+    var y = Math.floor(Math.random() * 10 + 1); 
+    var guess = 1; 
+      
+    document.getElementById("submitguess").onclick = function(){ 
+         var x = document.getElementById("guessField").value; 
+  
+   if(x == y) 
+   {     
+div.innerHTML = div.innerHTML   + "That's right! You're a good guesser.";
+
+   } 
+    else
+   { 
+div.innerHTML = div.innerHTML   + "That is incorrect. Guess again.";
+   } 
+} 
+</script> 
+</body> 
+</html>                 
